@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		C4080A5B1A7457D8000B011F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4080A5A1A7457D8000B011F /* AppDelegate.swift */; };
-		C4080A5D1A7457D8000B011F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4080A5C1A7457D8000B011F /* ViewController.swift */; };
 		C4080A601A7457D8000B011F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4080A5E1A7457D8000B011F /* Main.storyboard */; };
 		C4080A621A7457D8000B011F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4080A611A7457D8000B011F /* Images.xcassets */; };
 		C4080A651A7457D8000B011F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4080A631A7457D8000B011F /* LaunchScreen.xib */; };
 		C4080A711A7457D8000B011F /* github_fellowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4080A701A7457D8000B011F /* github_fellowsTests.swift */; };
+		C4080A7B1A745929000B011F /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4080A7A1A745929000B011F /* HomeTableViewController.swift */; };
+		C4080A7D1A7459E2000B011F /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4080A7C1A7459E2000B011F /* NetworkController.swift */; };
+		C4080A7F1A746D6B000B011F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4080A7E1A746D6B000B011F /* Repository.swift */; };
+		C4080A811A746E10000B011F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4080A801A746E10000B011F /* User.swift */; };
+		C4080A831A74793D000B011F /* SearchRepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4080A821A74793D000B011F /* SearchRepoViewController.swift */; };
+		C40CD2BE1A7525CD008A5EFA /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CD2BD1A7525CD008A5EFA /* UserDetailViewController.swift */; };
+		C40CD2C01A752C80008A5EFA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CD2BF1A752C80008A5EFA /* WebViewController.swift */; };
+		C41B90621A7481440036604D /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B90611A7481440036604D /* UserSearchViewController.swift */; };
+		C49F48011A74A2C00075E378 /* ToUserDetailAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F48001A74A2C00075E378 /* ToUserDetailAnimationController.swift */; };
+		C4CF33711A748BED0018513E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CF33701A748BED0018513E /* Extensions.swift */; };
+		C4CF33731A7497D90018513E /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CF33721A7497D90018513E /* UserCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +39,23 @@
 		C4080A551A7457D8000B011F /* github_fellows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = github_fellows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4080A591A7457D8000B011F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4080A5A1A7457D8000B011F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4080A5C1A7457D8000B011F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4080A5F1A7457D8000B011F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4080A611A7457D8000B011F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C4080A641A7457D8000B011F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C4080A6A1A7457D8000B011F /* github_fellowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = github_fellowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4080A6F1A7457D8000B011F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4080A701A7457D8000B011F /* github_fellowsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = github_fellowsTests.swift; sourceTree = "<group>"; };
+		C4080A7A1A745929000B011F /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		C4080A7C1A7459E2000B011F /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		C4080A7E1A746D6B000B011F /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		C4080A801A746E10000B011F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C4080A821A74793D000B011F /* SearchRepoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRepoViewController.swift; sourceTree = "<group>"; };
+		C40CD2BD1A7525CD008A5EFA /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		C40CD2BF1A752C80008A5EFA /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = github_fellows/WebViewController.swift; sourceTree = "<group>"; };
+		C41B90611A7481440036604D /* UserSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
+		C49F48001A74A2C00075E378 /* ToUserDetailAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToUserDetailAnimationController.swift; path = ../ToUserDetailAnimationController.swift; sourceTree = "<group>"; };
+		C4CF33701A748BED0018513E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C4CF33721A7497D90018513E /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +79,7 @@
 		C4080A4C1A7457D8000B011F = {
 			isa = PBXGroup;
 			children = (
+				C40CD2BF1A752C80008A5EFA /* WebViewController.swift */,
 				C4080A571A7457D8000B011F /* github_fellows */,
 				C4080A6D1A7457D8000B011F /* github_fellowsTests */,
 				C4080A561A7457D8000B011F /* Products */,
@@ -77,9 +98,18 @@
 		C4080A571A7457D8000B011F /* github_fellows */ = {
 			isa = PBXGroup;
 			children = (
+				C49F48001A74A2C00075E378 /* ToUserDetailAnimationController.swift */,
 				C4080A5A1A7457D8000B011F /* AppDelegate.swift */,
-				C4080A5C1A7457D8000B011F /* ViewController.swift */,
 				C4080A5E1A7457D8000B011F /* Main.storyboard */,
+				C4080A7C1A7459E2000B011F /* NetworkController.swift */,
+				C41B90611A7481440036604D /* UserSearchViewController.swift */,
+				C40CD2BD1A7525CD008A5EFA /* UserDetailViewController.swift */,
+				C4CF33721A7497D90018513E /* UserCollectionViewCell.swift */,
+				C4CF33701A748BED0018513E /* Extensions.swift */,
+				C4080A7E1A746D6B000B011F /* Repository.swift */,
+				C4080A801A746E10000B011F /* User.swift */,
+				C4080A821A74793D000B011F /* SearchRepoViewController.swift */,
+				C4080A7A1A745929000B011F /* HomeTableViewController.swift */,
 				C4080A611A7457D8000B011F /* Images.xcassets */,
 				C4080A631A7457D8000B011F /* LaunchScreen.xib */,
 				C4080A581A7457D8000B011F /* Supporting Files */,
@@ -212,8 +242,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4080A5D1A7457D8000B011F /* ViewController.swift in Sources */,
+				C4080A7B1A745929000B011F /* HomeTableViewController.swift in Sources */,
+				C4CF33711A748BED0018513E /* Extensions.swift in Sources */,
+				C40CD2BE1A7525CD008A5EFA /* UserDetailViewController.swift in Sources */,
 				C4080A5B1A7457D8000B011F /* AppDelegate.swift in Sources */,
+				C4080A7D1A7459E2000B011F /* NetworkController.swift in Sources */,
+				C4080A811A746E10000B011F /* User.swift in Sources */,
+				C41B90621A7481440036604D /* UserSearchViewController.swift in Sources */,
+				C40CD2C01A752C80008A5EFA /* WebViewController.swift in Sources */,
+				C4080A831A74793D000B011F /* SearchRepoViewController.swift in Sources */,
+				C4080A7F1A746D6B000B011F /* Repository.swift in Sources */,
+				C4CF33731A7497D90018513E /* UserCollectionViewCell.swift in Sources */,
+				C49F48011A74A2C00075E378 /* ToUserDetailAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +447,7 @@
 				C4080A761A7457D8000B011F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4080A771A7457D8000B011F /* Build configuration list for PBXNativeTarget "github_fellowsTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +456,7 @@
 				C4080A791A7457D8000B011F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

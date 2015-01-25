@@ -9,9 +9,9 @@
 import UIKit
 
 class ToUserDetailAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
-   
+    
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
-        return 0.4
+        return 0.35
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -40,18 +40,45 @@ class ToUserDetailAnimationController: NSObject, UIViewControllerAnimatedTransit
         
         let duration = self.transitionDuration(transitionContext)
         
-        UIView.animateWithDuration(duration, animations: { () -> Void in
-            toVC.view.alpha = 1.0
-            
-            let frame = containderView.convertRect(toVC.userImageView.frame, fromView: toVC.view)
-        }) { (finished) -> Void in
-            toVC.userImageView.hidden = false
-            cell.userImage.hidden = false
-            snapshotOfSelectedCell.removeFromSuperview()
-            transitionContext.completeTransition(true)
+//        UIView.animateWithDuration(duration, animations: { () -> Void in
+//            toVC.view.alpha = 1.0
+//        })
+        
+            //            let frame = containderView.convertRect(toVC.userImageView.frame, fromView: toVC.view)
+            //        }) { (finished) -> Void in
+            //            toVC.userImageView.hidden = false
+            //            cell.userImage.hidden = false
+            //            snapshotOfSelectedCell.removeFromSuperview()
+            //            transitionContext.completeTransition(true)
+            //        }
+        UIView.animateKeyframesWithDuration(duration, delay: 0.0, options: nil, animations: { () -> Void in
+            UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 0.5, animations: { () -> Void in
+                toVC.view.alpha = 0.5
+                snapshotOfSelectedCell.center = containderView.center
+                
+            })
+            UIView.addKeyframeWithRelativeStartTime(0.5, relativeDuration: 0.5, animations: { () -> Void in
+                toVC.view.alpha = 1.0
+                let frame = containderView.convertRect(toVC.userImageView.frame, fromView: toVC.view)
+                snapshotOfSelectedCell.frame = frame
+            })
+            }) { (finished) -> Void in
+                
+
+                toVC.userImageView.hidden = false
+                snapshotOfSelectedCell.removeFromSuperview()
+                transitionContext.completeTransition(true)
+                //unhide the original cell
+                cell.userImage.hidden = false
+                
         }
     }
+
+
 }
+            
+
+
 
 
 
